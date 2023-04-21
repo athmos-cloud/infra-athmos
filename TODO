@@ -1,0 +1,3 @@
+- GKE (*2)
+- Vault -> secret manager (for operation uses)
+- KMS
