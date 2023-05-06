@@ -6,16 +6,18 @@ terraform {
     }
     github = {
       source = "integrations/github"
+      version = "5.25.0"
     }
   }
 }
 
 provider "google" {
+  credentials = file(var.credentials_file)
   project     = var.project
   region      = var.region
 }
 
 provider "github" {
   owner = var.github_owner
-  token = var.github_token
+  token = file(var.github_token_file)
 }

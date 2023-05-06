@@ -1,7 +1,15 @@
+
+variable "project" {
+  description = "GCP proect in which the infratructure will be provisioned"
+  type = string
+}
+
 variable "id" {
-  description = ""
+  description = "ID of the service account"
+  type = string
 }
 
 variable "name" {
-  description = ""
+  description = "Display ame of the service account"
+  type = string
 }
