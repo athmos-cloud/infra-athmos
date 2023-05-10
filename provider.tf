@@ -18,6 +18,6 @@ provider "google" {
 }
 
 provider "github" {
-  owner = var.github_owner
-  token = file(var.github_token_file)
+  owner = var.github_organization
+  token = trim(file(var.github_token_file), "\n")
 }

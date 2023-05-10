@@ -18,6 +18,7 @@ variable "region" {
   description = "Location of the registry [EU, US, ASIA]"
   type        = string
   default     = "europe-west9"
+
 }
 
 variable "viewers_sa" {

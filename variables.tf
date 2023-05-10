@@ -24,8 +24,14 @@ variable "github_token_file" {
   type = string
 }
 
-variable "github_owner" {
-  description = "Github owner"
-  default = "PaulBarrie"
+variable "github_organization" {
+  description = "Github organization"
+  default = "athmos-cloud"
+  type = string
+}
+
+variable "config_local_dir" {
+  description = "The directory where the local configuration files will be stored"
+  default = "/home/paulb/.config/athmos/infra"
   type = string
 }
